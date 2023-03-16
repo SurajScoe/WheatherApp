@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    font-size: 100%;
+  }
+  
+  .card {
+    background: rgba( 0, 0, 0, 0.30 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    /* backdrop-filter: blur( 11.5px ); */
+    /* -webkit-backdrop-filter: blur( 11.5px ); */
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: white;
+    padding: 2em;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    /* The overflow property is set to "hidden" to ensure that any content that exceeds the element's boundaries is not visible. */
+    overflow: hidden;
+    outline: auto;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 37px;
+    width: 37px;
+    outline: none;
+    /* background: rgba( 255, 255, 255, 0.25 );
+    color: white; */
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+
+   /* button{
+    margin: .5em;
+    border-radius: 50%;
+    border: none;
+    height: 35px;
+    width: 35px;
+    outline: auto;
+    outline: none;
+    background: rgb(255, 255, 255,0.25)
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+   } */
+  input.search-bar {
+    border: none;
+    outline: auto;
+    padding: 0.4em 1em;
+    border-radius: 50px;
+    background: rgba( 0, 0, 0, 0.30 );
+    color: rgb(17, 16, 16);
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+  }
+  /* user hovers their mouse over the button, 
+  the background color of the button changes to a semi-transparent gray */
+  .search-bar:hover{
+    background: white;
+  }
+  
+  button:hover {
+    background: #7c7c7c6b;
+  }
+  
+  h1.temp {
+    /* No margin any side of h1 */
+    margin: 0;   
+    /* The margin-bottom property is 
+    then used to add a margin specifically to the bottom of the <h1> element */
+    margin-bottom: 0.4em;
+  }
+  
+  /* The display: flex property allows the 
+  elements to be flexible and adjust to the available space,
+   while the align-items: center property helps to create a visually balanced design. */
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .description {
+    /* the first letter of each word capitalized */
+    text-transform: capitalize;
+    margin-left: 8px;
+  }
+  
+  .weather.loading {
+    visibility: hidden;
+    /* limit the height of an element to a specific value,  */
+    max-height: 20px;
+    /* the element will be positioned relative to its normal position on the page. */
+    position: relative;
+  }
+
+
+  /* creating a loading indicator on a webpage, 
+  and can be particularly helpful when loading content */
+  .weather.loading:after {
+    visibility: visible;
+    /* This property can be used to add text or 
+    other content to an element using CSS. */
+    content: "Loading...";
+    color: white; 
+    /* positioned relative to its nearest positioned ancestor. */
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+  
+  /* adding some visual flair to elements on a webpage */
+  .js-tilt-glare {
+    border-radius: 10px;
+  }
+  
+  a {
+    margin-top: 7%;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
